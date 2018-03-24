@@ -12,11 +12,6 @@ class Success extends \Magento\Framework\View\Element\Template
         $this->_checkoutSession = $checkoutSession;
     }
 
-    public function getSomething()
-    {
-        return 'returned something from custom block.';
-    }
-
     public function getOrder() {
         return $this->_checkoutSession->getLastRealOrder();
     }
