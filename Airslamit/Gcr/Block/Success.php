@@ -21,7 +21,7 @@ class Success extends \Magento\Framework\View\Element\Template
 
     public function getOrderId() {
         $order = $this->_checkoutSession->getLastRealOrder();
-        return $order->getEntityId();
+        return $order->getRealOrderId();
     }
 
     public function getConfigMerchantId() {
