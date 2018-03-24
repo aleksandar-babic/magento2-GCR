@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<body>
+    <referenceContainer name="order.success.additional.info">
+        <block class="Airslamit\Gcr\Block\Success"
+               name="airslamit.order.success"
+               template="Airslamit_Gcr::order/success.phtml"
+               after="-">
+        </block>
+    </referenceContainer>
+</body>
