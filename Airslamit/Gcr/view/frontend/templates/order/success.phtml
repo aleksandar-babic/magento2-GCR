@@ -11,14 +11,14 @@
       window.gapi.surveyoptin.render(
         {
           // REQUIRED
-          "merchant_id":"MERCHANT_ID",
+          "merchant_id": "<?php echo $block->getConfigMerchantId(); ?>",
           "order_id": "<?php echo $block->getOrderId(); ?>",
           "email": "<?php echo $block->getOrder()->getCustomerEmail(); ?>",
-          "delivery_country": "US",
-          "estimated_delivery_date": "YYYY-MM-DD",
+          "delivery_country": "<?php echo $block->getConfigCountry(); ?>",
+          "estimated_delivery_date": "<?php echo $block->getEstimatedDate(); ?>",
 
           // OPTIONAL
-          "opt_in_style": "OPT_IN_STYLE"
+          "opt_in_style": "<?php echo $block->getConfigOptInStyle(); ?>"
         }); 
      });
   }

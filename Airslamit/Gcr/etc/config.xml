@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <gcr>
+            <general>
+                <delivery_country>US</delivery_country>
+                <estimated_delivery_date>5</estimated_delivery_date>
+                <opt_in_style>CENTER_DIALOG</opt_in_style>
+            </general>
+        </gcr>
+    </default>
+</config>
