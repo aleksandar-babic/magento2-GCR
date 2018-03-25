@@ -11,6 +11,9 @@
 * Configure your values (values like merchant id, delivery country, etc..) in Stores -> Configuration -> Airslamit
 > More informations about GCR values [here](https://support.google.com/merchants/answer/7106244?hl=en&ref_topic=7105160&authuser=0&visit_id=1-636572395050667202-2146512379&rd=1).
 
+## Configuration options in Stores -> Configuration -> Airslamit
+![Configuration values screenshot](https://i.imgur.com/VMv4qPI.png)
+
 ## What does this module do?
 This module will add opt-in badge to your success.phtml (Order success page). Exact code that will be added is this
 ```javascript
