@@ -4,26 +4,26 @@
         <tab id="Airslamit" translate="label" sortOrder="10">
             <label>Airslamit</label>
         </tab>
-        <section id="gcr" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+        <section id="gcr" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
             <label>Google Customer Reviews (GCR) configuration</label>
             <tab>Airslamit</tab>
             <resource>Airslamit_Gcr::gcr_config</resource>
-            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General Configuration</label>
-                <field id="merchant_id" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="merchant_id" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Merchant ID</label>
                     <comment>Your Merchant Center ID. You can get this value from the Google Merchant Center.</comment>
                 </field>
-                <field id="delivery_country" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="delivery_country" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Delivery Country</label>
                     <comment>The two-letter country code identifies where the customer's order will be delivered. Default value is US.</comment>
                 </field>
-                <field id="estimated_delivery_date" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="estimated_delivery_date" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Estimated Delivery Date</label>
                     <comment>How many days from now will order need to arrive (example value: 5). Default value is 5.</comment>
                 </field>
-                <field id="opt_in_style" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="opt_in_style" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Opt In Style</label>
                     <source_model>Airslamit\Gcr\Model\Config\Source\OptInStyle</source_model>
                     <comment>Specifies how the opt-in module's dialog box is displayed</comment>
