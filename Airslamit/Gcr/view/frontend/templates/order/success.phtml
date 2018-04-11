@@ -18,7 +18,8 @@
           "estimated_delivery_date": "<?php echo $block->getEstimatedDate(); ?>",
 
           // OPTIONAL
-          "opt_in_style": "<?php echo $block->getConfigOptInStyle(); ?>"
+          "opt_in_style": "<?php echo $block->getConfigOptInStyle(); ?>",
+          "products": <?php print_r($block->getGtinProducts()); ?>
         }); 
      });
   }

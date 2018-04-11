@@ -24,6 +24,16 @@ class Success extends \Magento\Framework\View\Element\Template
         return $order->getRealOrderId();
     }
 
+    public function getGtinProducts() {
+        $order = $this->getOrder();
+        $products = [];
+        foreach ($order->getAllItems() as $product) {
+            $gtin = ["gtin" => $product->getSku()];
+            $products[] = (object)$gtin;
+        }
+        return json_encode($products);
+    }
+
     public function getConfigMerchantId() {
         return $this->_helperData->getGeneralConfig('merchant_id');
     }
