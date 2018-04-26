@@ -35,7 +35,8 @@ This module will add opt-in badge to your success.phtml (Order success page). Ex
           "estimated_delivery_date": "YYYY-MM-DD",
 
           // OPTIONAL
-          "opt_in_style": "OPT_IN_STYLE"
+          "opt_in_style": "OPT_IN_STYLE",
+          "products": [{"gtin":"GTIN1"}, {"gtin":"GTIN2"}]
         }); 
      });
   }
