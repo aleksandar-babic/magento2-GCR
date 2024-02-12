@@ -1,10 +1,12 @@
 <?php
+
 namespace Airslamit\Gcr\Block;
+
 class Success extends \Magento\Framework\View\Element\Template
 {
     protected $_checkoutSession;
     protected $_helperData;
- 
+
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
         \Magento\Checkout\Model\Session $checkoutSession,
@@ -53,5 +55,9 @@ class Success extends \Magento\Framework\View\Element\Template
     public function getEstimatedDate() {
         $addDays = $this->getConfigEstimatedDeliveryDate() . ' days';
         return date('Y-m-d', strtotime($addDays));
+    }
+
+    public function getLanguageCode() {
+        return $this->_helperData->getStoreViewLanguageCode();
     }
 }
