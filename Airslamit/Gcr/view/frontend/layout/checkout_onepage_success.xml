@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <body>
-    <referenceContainer name="order.success.additional.info">
+    <referenceContainer name="before.body.end">
         <block class="Airslamit\Gcr\Block\Success"
                name="airslamit.order.success"
                template="Airslamit_Gcr::order/success.phtml"
